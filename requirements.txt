@@ -1,0 +1,5 @@
+streamlit
+requests
+torch
+transformers
+accelerate
