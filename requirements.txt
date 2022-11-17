@@ -1,3 +1,6 @@
+fastapi
+uvicorn
+gunicorn
 streamlit
 requests
 torch
