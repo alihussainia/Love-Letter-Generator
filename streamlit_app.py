@@ -17,7 +17,11 @@ st.write("A web app that writes love letters using AI")
 
 response = None
 
+To = st.text_input(label, value="")
+From = st.text_input(label, value=""
+
 submit_button = st.button('Write!')
+
 
 if submit_button: 
   if To==None: To="Love"
