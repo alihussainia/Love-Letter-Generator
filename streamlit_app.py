@@ -17,8 +17,8 @@ st.write("A web app that writes love letters using AI")
 
 response = None
 
-To = st.text_input(label, value="")
-From = st.text_input(label, value="")
+To = st.text_input("Enter whom you are writing this letter to!", value="")
+From = st.text_input("Enter who is writing this letter!", value="")
 
 submit_button = st.button('Write!')
 
