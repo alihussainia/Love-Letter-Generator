@@ -20,10 +20,7 @@ response = None
 To = st.text_input(label, value="")
 From = st.text_input(label, value=""
 
-submit_button = st.button('Write!')
-
-
-if submit_button: 
+if st.button('Write!'): 
   if To==None: To="Love"
   if From==None: From="Anonymous"
 
