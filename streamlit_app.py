@@ -27,7 +27,13 @@ if submit_button:
   if From==None: From="Anonymous"
 
   response = requests.post("http://35.224.65.114:8000/generate").json()
-  final_resp = f"""Dear +{To}+,+\n+{response}+\n+From+\n+{From}"""
+  final_resp = f"""Dear {To},
+  
+ {response}
+ 
+ From
+ 
+ {From}"""
   st.markdown(final_resp) 
 
 st.text("App developed with ❤️ by @alihussainia")
