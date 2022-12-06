@@ -2,4 +2,3 @@ streamlit
 requests
 beautifulsoup4 
 jsonlines
-urllib
