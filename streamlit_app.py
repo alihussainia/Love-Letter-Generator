@@ -44,7 +44,7 @@ if submit_button:
     }
 
   response = requests.post(
-  "https://shared-api.forefront.link/organization/QPP6ce99Y37v/gpt-j-6b-vanilla/completions/l6TTTzVABU9f",
+  "https://shared-api.forefront.link/organization/QPP6ce99Y37v/gpt-j-6b-vanilla/completions/lsWkUsFftG2j",
   json=body,
   headers=headers
 ).json()
