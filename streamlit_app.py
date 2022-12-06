@@ -9,7 +9,7 @@ import requests
 import random
 import warnings
 import json 
-#from secrets import AUTHORIZATION_TOKEN, CONTENT_TYPE
+
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -30,8 +30,8 @@ if submit_button:
   if input_txt==None: "Dear love"
 
   headers = {
-  "Authorization": AUTHORIZATION_TOKEN,
-  "Content-Type": CONTENT_TYPE,
+  "Authorization": st.secrets["AUTHORIZATION_TOKEN"],
+  "Content-Type":  st.secrets["CONTENT_TYPE"],
 }
 
   body = {
