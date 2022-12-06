@@ -31,7 +31,7 @@ if submit_button:
 
   headers = {
   "Authorization": st.secrets["AUTHORIZATION_TOKEN"],
-  "Content-Type":  st.secrets["CONTENT_TYPE"],
+  "Content-Type": "application/json",
 }
 
   body = {
