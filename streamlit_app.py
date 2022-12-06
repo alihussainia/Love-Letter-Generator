@@ -18,16 +18,15 @@ st.set_page_config(page_title="loveLetter", page_icon="love_letter", layout='cen
 st.title("AI based Love Letter Generator Application")
 st.write("A web app that writes love letters using AI")
 
-submit_button = st.button('Write!')
-
 To = st.text_input("To")
 From = st.text_input("From")
-input_txt = st.text_input("Enter any letter salutation here...")
+input_txt = st.text_input("Enter a starting sentence below")
+submit_button = st.button('Write!')
 
 if submit_button:
-  if To==None: To="Love"
-  if From==None: From="Anonymous"
-  if input_txt==None: "Dear love"
+  if To=="": To="Love"
+  if From=="": From="Anonymous"
+  if input_txt=="": "Dear love"
 
   headers = {
   "Authorization": st.secrets["AUTHORIZATION_TOKEN"],
@@ -49,7 +48,7 @@ if submit_button:
   headers=headers
 ).json()
 
-  st.markdown(f"""Dear +{To}+,+\n+{response}+\n+From+\n+{From}""") 
+  st.markdown(f"""Dear {To},\n{response}\nFrom\n{From}""") 
 
 st.text("App developed with ❤️ by @alihussainia")
 
