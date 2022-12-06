@@ -1,5 +1,5 @@
 streamlit
 requests
-torch
-transformers
-accelerate
+beautifulsoup4 
+jsonlines
+urllib
