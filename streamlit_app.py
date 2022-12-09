@@ -52,7 +52,7 @@ if submit_button:
   
   st.markdown(f"""Dear {To},
   
-  {input_txt}+" "+{data['result'][0]['completion']}
+  {input_txt} {data['result'][0]['completion']}
   
   From,
   
