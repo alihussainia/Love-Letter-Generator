@@ -50,7 +50,13 @@ if submit_button:
 )
   data = response.json()
   
-  st.markdown(f"""Dear {To} \n {data['result'][0]['completion']} \n From \n {From}""") 
+  st.markdown(f"""Dear {To},
+  
+  {input_txt}+" "+{data['result'][0]['completion']}
+  
+  From,
+  
+  {From}""") 
 
 st.text("App developed with ❤️ by @alihussainia")
 
