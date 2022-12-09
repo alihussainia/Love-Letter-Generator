@@ -23,6 +23,12 @@ From = st.text_input("From")
 input_txt = st.text_input("Enter a starting text")
 submit_button = st.button('Write!')
 
+length= int(st.sidebar.number_input(label = "length", value = 64, max_value = 2048, help = """What is response length?
+
+Response length is the length of the generated text, in tokens, you’d like based on your prompt. A token is roughly 4 characters including alphanumerics and special characters.
+
+Note that the max response length for GPT-J is 2048 tokens."""))
+
 if submit_button:
   if To=="": To="Love"
   if From=="": From="Anonymous"
@@ -40,7 +46,7 @@ if submit_button:
     "top_k": 40,
     "temperature": 0.8,
     "repetition_penalty":  1,
-    "length": 64
+    "length": length
   }
 
   response = requests.post(
