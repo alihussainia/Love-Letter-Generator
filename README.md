@@ -4,6 +4,9 @@ license: apache-2.0
 # Love Letter Generation Using GPT-J
 The project aims to create an app that allow people to generate love letters using GPT-J, an open-source transformer model. 
 
+## Deployed Application
+<a href="https://alihussainia-love-letter-generator-streamlit-app-yvxpjy.streamlit.app/">AI based Love Letter Generator Application</a>
+
 ## Tools Used:
 - GPT-J, using <a href="https://beta.forefront.ai/solutions">Forefront.ai</a>
 - <a href="https://streamlit.io/">Streamlit</a>
