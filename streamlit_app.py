@@ -8,9 +8,12 @@ import streamlit as st
 import requests
 import random
 import warnings
+<<<<<<< HEAD
 import json 
 
 
+=======
+>>>>>>> bfb3f62e2b11c2d267d26c7e3addf3b85277ea00
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 st.set_page_config(page_title="loveLetter", page_icon="love_letter", layout='centered', initial_sidebar_state='auto', menu_items=None)
@@ -18,6 +21,7 @@ st.set_page_config(page_title="loveLetter", page_icon="love_letter", layout='cen
 st.title("AI based Love Letter Generator Application")
 st.write("A web app that writes love letters using AI")
 
+<<<<<<< HEAD
 To = st.text_input("To")
 From = st.text_input("From")
 input_txt = st.text_input("Enter a starting text")
@@ -63,6 +67,28 @@ if submit_button:
   From,
   
   {From}""") 
+=======
+response = None
+
+To = st.text_input("Enter whom you are writing this letter to!", value="")
+From = st.text_input("Enter who is writing this letter!", value="")
+
+submit_button = st.button('Write!')
+
+if submit_button: 
+  if To==None: To="Love"
+  if From==None: From="Anonymous"
+
+  response = requests.post("http://35.224.65.114:8000/generate").json()
+  final_resp = f"""Dear {To},
+  
+ {response}
+ 
+ From
+ 
+ {From}"""
+  st.markdown(final_resp) 
+>>>>>>> bfb3f62e2b11c2d267d26c7e3addf3b85277ea00
 
 st.text("App developed with ❤️ by @alihussainia")
 

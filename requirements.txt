@@ -1,4 +1,13 @@
+fastapi
+uvicorn
+gunicorn
 streamlit
 requests
+<<<<<<< HEAD
 beautifulsoup4 
 jsonlines
+=======
+torch
+transformers
+accelerate
+>>>>>>> bfb3f62e2b11c2d267d26c7e3addf3b85277ea00
