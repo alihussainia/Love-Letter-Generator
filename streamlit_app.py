@@ -34,6 +34,7 @@ if submit_button:
   if From=="": From="Anonymous"
   if input_txt=="":
     st.error("Enter some starting text!")
+    submit_button=False
 
   headers = {
   "Authorization": st.secrets["AUTHORIZATION_TOKEN"],
