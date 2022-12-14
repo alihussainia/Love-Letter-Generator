@@ -36,6 +36,7 @@ if submit_button:
     st.error("Enter some starting text!")
     submit_button=False
 
+if submit_button:
   headers = {
   "Authorization": st.secrets["AUTHORIZATION_TOKEN"],
   "Content-Type": "application/json"
