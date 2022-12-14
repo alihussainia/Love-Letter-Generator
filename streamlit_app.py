@@ -37,8 +37,10 @@ if submit_button:
   if To=="": To="Love"
   if From=="": From="Anonymous"
   if input_txt=="":
-    raise Exception("Enter some starting text!")
+    st.error("Enter some starting text!")
+    submit_button=False
 
+if submit_button:
   headers = {
   "Authorization": st.secrets["AUTHORIZATION_TOKEN"],
   "Content-Type": "application/json"
