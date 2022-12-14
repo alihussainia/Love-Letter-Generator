@@ -33,7 +33,7 @@ if submit_button:
   if To=="": To="Love"
   if From=="": From="Anonymous"
   if input_txt=="":
-    raise Exception("Enter some starting text!")
+    st.error("Enter some starting text!")
 
   headers = {
   "Authorization": st.secrets["AUTHORIZATION_TOKEN"],
